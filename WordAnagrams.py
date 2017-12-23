@@ -6,7 +6,7 @@ word_clean = sorted(list(set(word.strip().lower() for word in open('words', 'r')
 #print(wordClean[:10])
 
 '''
-Making a dictionary of all anagrams of all words in the English Dictionary
+TUTORIAL: TASK 1: Making a dictionary of all anagrams of all words in the English Dictionary
 '''
 def signature(word):
     return ''.join(sorted(word))
@@ -28,7 +28,7 @@ anagrams_all = {word: anagram_search(word) for word in word_clean if len(anagram
 #create dict with word key and all anagrams as values as long as there is more than one anagram for it besides itself
 
 '''
-Finding how many anagrams of each length exist
+CHALLENGE: TASK 2: Finding how many anagrams of each length exist
 '''
 
 words_by_len = collections.defaultdict(list)
